@@ -1,13 +1,17 @@
+
+
 const allDataFrame = document.getElementById("pokeNames");
 const mainImage = document.getElementById("image");
 const toggleSwitch = document.getElementById("switch");
+const pokemonDataFrame = document.getElementById('pokemonData');
+const pokemonAbilities = document.getElementById('abilities');
+const pokemonWeight = document.getElementById('weight');
 const allPokeFrame = document.createElement("div");
 const grassDiv = document.createElement("div");
 const waterDiv = document.createElement("div");
 const firediv = document.createElement("div");
-const pokemonDataFrame = document.getElementById('pokemonData');
-const pokemonAbilities = document.getElementById('abilities');
-const pokemonWeight = document.getElementById('weight');
+
+
 
 const renderAbilities = (abilities) => {
   let abilitiesString = '';
