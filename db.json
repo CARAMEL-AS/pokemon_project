@@ -1,0 +1,58 @@
+{
+  "pokeNames": [
+    {
+      "name": "bulbasaur",
+      "power": 1,
+      "url": "https://pokeapi.co/api/v2/pokemon/1/",
+      "image": "https://static.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest/scale-to-width-down/200?cb=20200620223551"
+    },
+    {
+      "name": "ivysaur",
+      "power": 1,
+      "url": "https://pokeapi.co/api/v2/pokemon/2/",
+      "image": "https://static.wikia.nocookie.net/pokemon/images/7/73/002Ivysaur.png/revision/latest/scale-to-width-down/200?cb=20140328190847"
+    },
+    {
+      "name": "venusaur",
+      "power": 1,
+      "url": "https://pokeapi.co/api/v2/pokemon/3/",
+      "image": "https://static.wikia.nocookie.net/pokemon/images/a/ae/003Venusaur.png/revision/latest/scale-to-width-down/200?cb=20200731133335"
+    },
+    {
+      "name": "charmander",
+      "power": 2,
+      "url": "https://pokeapi.co/api/v2/pokemon/4/",
+      "image": "https://static.wikia.nocookie.net/pokemon/images/7/73/004Charmander.png/revision/latest/scale-to-width-down/187?cb=20200620223744"
+    },
+    {
+      "name": "charmeleon",
+      "power": 2,
+      "url": "https://pokeapi.co/api/v2/pokemon/5/",
+      "image": "https://static.wikia.nocookie.net/pokemon/images/4/4a/005Charmeleon.png/revision/latest/scale-to-width-down/200?cb=20140328191309"
+    },
+    {
+      "name": "charizard",
+      "power": 2,
+      "url": "https://pokeapi.co/api/v2/pokemon/6/",
+      "image": "https://static.wikia.nocookie.net/pokemon/images/7/7e/006Charizard.png/revision/latest/scale-to-width-down/200?cb=20200731134217"
+    },
+    {
+      "name": "squirtle",
+      "power": 3,
+      "url": "https://pokeapi.co/api/v2/pokemon/7/",
+      "image": "https://static.wikia.nocookie.net/pokemon/images/3/39/007Squirtle.png/revision/latest/scale-to-width-down/178?cb=20200620223922"
+    },
+    {
+      "name": "wartortle",
+      "power": 3,
+      "url": "https://pokeapi.co/api/v2/pokemon/8/",
+      "image": "https://static.wikia.nocookie.net/pokemon/images/0/0c/008Wartortle.png/revision/latest/scale-to-width-down/200?cb=20140328191553"
+    },
+    {
+      "name": "blastoise",
+      "power": 3,
+      "url": "https://pokeapi.co/api/v2/pokemon/9/",
+      "image": "https://static.wikia.nocookie.net/pokemon/images/0/02/009Blastoise.png/revision/latest/scale-to-width-down/190?cb=20200731133731"
+    }
+  ]
+}
