@@ -5,12 +5,35 @@ const allPokeFrame = document.createElement("div");
 const grassDiv = document.createElement("div");
 const waterDiv = document.createElement("div");
 const firediv = document.createElement("div");
+const pokemonDataFrame = document.getElementById('pokemonData');
+const pokemonAbilities = document.getElementById('abilities');
+const pokemonWeight = document.getElementById('weight');
+
+const renderAbilities = (abilities) => {
+  let abilitiesString = '';
+  abilities.forEach((item, index) => {
+    abilitiesString += `${abilities.length > 1 && index !== 0 ? ', ' : ''} ${item.ability.name}`;
+  })
+  return abilitiesString;
+}
+
+const getAbilities = async (pokemon) => {
+  return await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
+  .then(res => { return res.json() })
+  .then(data => {
+    return {
+      abilities: data.abilities,
+      weight: data.weight
+    };
+  })
+}
 
 const renderAllPokemon = (arrOfObj) => {
-  arrOfObj.forEach((pokemon) => {
+  arrOfObj.forEach( async (pokemon) => {
+    const abilities = await getAbilities(pokemon);
     const pokemonImg = document.createElement("img");
-    pokemonImg.style.height = "200px";
-    pokemonImg.style.width = "200px";
+    pokemonImg.style.height = "120px";
+    pokemonImg.style.width = "120px";
     pokemonImg.style.marginTop = "1.5%";
     pokemonImg.style.marginLeft = "5%";
     pokemonImg.style.marginRight = "5%";
@@ -19,6 +42,9 @@ const renderAllPokemon = (arrOfObj) => {
     pokemonImg.style.backgroundColor = "rgba(52, 152, 219, 0.2)";
     pokemonImg.addEventListener("mouseover", () => {
       mainImage.src = pokemon.image;
+      pokemonDataFrame.style.display = '';
+      pokemonAbilities.innerHTML = renderAbilities(abilities.abilities);
+      pokemonWeight.innerHTML = abilities.weight;
     });
     if (pokemon.power === 1) {
       pokemonImg.src = pokemon.image;
@@ -39,8 +65,8 @@ const renderAllPokemon = (arrOfObj) => {
 
 mainImage.addEventListener("click", () => {
   mainImage.style.marginTop = "0%";
-  mainImage.style.width = "140px";
-  mainImage.style.height = "140px";
+  mainImage.style.width = "200px";
+  mainImage.style.height = "200px";
   mainImage.src = "./assets/openBall.png";
   allDataFrame.style.display = "";
 });
