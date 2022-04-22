@@ -1,0 +1,19 @@
+body {
+    background: #f1f1f1;
+    background: -moz-linear-gradient(top, #f1f1f1 0%, #e10900 100%);
+    background: -webkit-linear-gradient(top, #f1f1f1 0%, #e10900 100%);
+    background: linear-gradient(to bottom, #f1f1f1 0%, #e10900 100%);
+  }
+  h1 {
+    font-size: 50;
+    font: "Arial black";
+  }
+  #abilities {
+    font-size: 20;
+    font: "Arial black";
+  }
+  #weight {
+    font-size: 15;
+    font: "Ariel black";
+  }
+  
